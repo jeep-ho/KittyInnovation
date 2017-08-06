@@ -15,14 +15,21 @@
 <script>
 import Loading from './components/Loading'
 import Hello from './components/Hello'
+import VueRouter from 'vue-router'
 const routers = [
   { path: '/Loding', compents: Loading },
   { path: '/Hello', compents: Hello }
 ]
-var router =new VueRouter({routers})
+const router = new VueRouter({
+  routers
+})
+// const app=new Vue({
+//   router
+// }).$mount('#app')
+
 export default {
   name: 'app',
-  router:router
+  router: router
 }
 </script>
 
